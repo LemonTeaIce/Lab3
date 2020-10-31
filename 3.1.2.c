@@ -23,7 +23,7 @@ int main(void)
  
  else
  {
-  prinf("you entered: %s\n",s);
+  printf("you entered: %s\n",s);
  }
  return 0;
 }
