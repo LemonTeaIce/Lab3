@@ -5,10 +5,10 @@
 
 int main(void)
 {
- void sigtstp_handler(int sig);
+ void sigquit_handler(int sig);
  char s[200];
 
- if(signal(SIGTSTP,sigtstp_handler)==SIG_ERR)
+ if(signal(SIGQUIT,sigquit_handler)== SIG_ERR)
  {
   perror("signal");
   exit(1);
@@ -20,14 +20,15 @@ int main(void)
  {
   perror("gets");
  }
+ 
  else
  {
-  printf("you entered:%s\n",s);
+  prinf("you entered: %s\n",s);
  }
-return 0;
+ return 0;
 }
 
-void sigtstp_handler(int sig)
+void sigquit_handler(int sig)
 {
- printf("This is a special signal handler for CTRL+Z!\n");
+ printf("Jangan Kacau Saya!\n");
 }
