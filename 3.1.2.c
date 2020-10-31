@@ -30,5 +30,5 @@ int main(void)
 
 void sigquit_handler(int sig)
 {
- printf("This is a signal handler for CTRL+\ !\n");
+ printf(" This is a signal handler for 'CTRL+backslash'! \n ");
 }
