@@ -8,7 +8,7 @@ int main(void)
  void sigint_handler(int sig);
  char s[200];
 
- if(signal(SIGNIT,signit_handler)==SIG_ERR)
+ if(signal(SIGINT,sigint_handler)==SIG_ERR)
  {
   perror("signal");
   exit(1);
