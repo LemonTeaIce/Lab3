@@ -32,5 +32,5 @@ int main(void)
 
 void sigint_handler(int sig)
 {
- printf("Jangan Kacau Saya!\n");
+ printf("This is a special signal handler for CTRL+C!\n");
 }
