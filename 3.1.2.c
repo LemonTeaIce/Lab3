@@ -30,5 +30,5 @@ int main(void)
 
 void sigquit_handler(int sig)
 {
- printf("Jangan Kacau Saya!\n");
+ printf("This is a signal handler for CTRL+\ !\n");
 }
