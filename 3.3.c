@@ -17,7 +17,7 @@ int main(void)
  int nombor = 22;
 
  printf("Writing a number to pipe..\n");
- write(pipefds[1], &nombor. sizeof(nombor));
+ write(pipefds[1], &nombor, sizeof(nombor));
  printf("Done.\n\n");
 
  printf("Reading a number from pipe...\n");
