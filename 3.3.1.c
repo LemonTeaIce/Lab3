@@ -24,7 +24,7 @@ int main(void)
  read(pipefds[0],buffer,5);
  printf("Done...\n\n");
 
- prinf("PIN from pipe: %s\n",buffer);
+ printf("PIN from pipe: %s\n",buffer);
 
  return EXIT_SUCCESS;
 }
